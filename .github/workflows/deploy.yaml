@@ -5,12 +5,12 @@ jobs:
     name : Build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: copy file via ssh password
-        uses: appleboy/ssh-action@v0.1.4
+        uses: appleboy/ssh-action@v1.0.0
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_SECRET }}
+          key: ${{ secrets.SSH_RRIVATE_KEY}}
           port: 22
           script: whoami
