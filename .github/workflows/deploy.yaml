@@ -10,6 +10,6 @@ jobs:
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_RRIVATE_KEY}}
+          key: ${{ secrets.SSH_SECRET}}
           port: 22
           script: whoami
