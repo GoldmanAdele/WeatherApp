@@ -1,4 +1,4 @@
-me: deploy-weatherapp
+name: deplo-weatherapp
 on: push
 jobs:
   deploy:
